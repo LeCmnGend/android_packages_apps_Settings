@@ -427,4 +427,8 @@
     <string name="back_gesture_arrow_message">Анимация жестов назад</string>
     <string name="back_gesture_arrow_summary">Отображать анимацию для жеста назад</string>
 
+    <!-- Hotspot extras -->
+    <string name="tethering_allow_vpn_upstreams_title">Разрешить клиентам использовать VPN</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Позволять клиентам точки доступа использовать текущее VPN соединение</string>
+
 </resources>
