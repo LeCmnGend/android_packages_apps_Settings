@@ -99,4 +99,20 @@
     <string name="wifi_setup_wizard_title">Выберите сеть Wi-Fi</string>
     <string name="advanced_notifications_title">Расширенные настройки уведомлений</string>
     <string name="peak_refresh_rate_summary_custom">Автоматически увеличивать частоту обновления экрана с 60 до %1$d Гц для некоторых типов контента. Увеличивает расход заряда батареи.</string>
+
+    <!-- Strings for face unlock enrollment, missing from AOSP-->
+    <string name="aosp_security_settings_face_enroll_education_message">Когда откроется следующий экран, поверните голову из стороны в сторону, чтобы сделать снимки лица со всех ракурсов.</string>
+    <string name="aosp_security_settings_face_enroll_introduction_accessibility_expanded">Если у вас есть нарушения зрения или ограничена подвижность головы, используйте этот вариант настройки. При использовании фейсконтроля ваше лицо должно будет находиться прямо перед телефоном.</string>
+    <string name="aosp_security_settings_face_enroll_introduction_accessibility_diversity">Упрощенная настройка фейсконтроля</string>
+    <string name="aosp_security_settings_face_enroll_introduction_accessibility_vision">Глаза должны быть открыты</string>
+    <string name="aosp_security_settings_face_enroll_introduction_footer_part_0">Очки и не очень темные солнцезащитные очки можно не снимать.</string>
+    <string name="aosp_security_settings_face_enroll_introduction_footer_part_1">"Данные, записанные при использовании функции \"Фейсконтроль\", защищены и хранятся только на вашем телефоне. Вы можете удалить их в любое время.\n\nНовые фотографии, сделанные с помощью функции \"Фейсконтроль\", время от времени могут использоваться для создания улучшенных моделей лица."</string>
+    <string name="aosp_security_settings_face_enroll_introduction_footer_part_2">"Вы можете случайно разблокировать телефон, посмотрев на него. Телефон может быть разблокирован, если кто-то поднесет его к вашему лицу.\n\nВ настройках вы можете задать дополнительные параметры для фейсконтроля. Например, разрешить разблокировку устройства, только когда ваши глаза открыты."</string>
+    <string name="aosp_security_settings_face_enroll_introduction_footer_part_2_attention_not_supported">"Вы можете случайно разблокировать телефон, посмотрев на него.\n\nТелефон может быть разблокирован, если кто-то поднесет его к вашему лицу, даже когда у вас закрыты глаза."</string>
+    <string name="aosp_security_settings_face_enroll_introduction_footer_part_3">Телефон сможет разблокировать человек, очень похожий на вас, например ваш близнец.</string>
+
+    <!-- Back gesture animation -->
+    <string name="back_gesture_arrow_message">Анимация жестов назад</string>
+    <string name="back_gesture_arrow_summary">Отображать анимацию для жеста назад</string>
+
 </resources>
