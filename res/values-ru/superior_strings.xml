@@ -422,4 +422,9 @@
     <string name="lockpattern_settings_enable_error_path_title">Показать ошибка шаблона</string>
     <!-- Whether the dots will be drawn when using the lockscreen pattern -->
     <string name="lockpattern_settings_enable_dots_title">Показывать точки шаблона</string>
+	
+    <!-- Back gesture animation -->
+    <string name="back_gesture_arrow_message">Анимация жестов назад</string>
+    <string name="back_gesture_arrow_summary">Отображать анимацию для жеста назад</string>
+
 </resources>
