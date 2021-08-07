@@ -231,7 +231,10 @@ public class VibrationSettingsPreferenceFragment extends DashboardFragment
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         final VibrateOnTouchPreferenceController vibrateOnTouchPreferenceController =
                 new VibrateOnTouchPreferenceController(context, this, getSettingsLifecycle());
+        final ChargingVibroPreferenceController chargingVibroPreferenceController =
+                new ChargingVibroPreferenceController(context, this, getSettingsLifecycle());
         controllers.add(vibrateOnTouchPreferenceController);
+        controllers.add(chargingVibroPreferenceController);
         return controllers;
     }
 
