@@ -24,7 +24,9 @@
     <Preference
         android:key="system_animation"
         android:order="-500"
-        android:layout="@layout/system_animation" />
+        android:layout="@layout/system_animation"
+        android:clickable="false"
+        android:selectable="false" />
 
     <Preference
         android:key="language_input_settings"
@@ -81,4 +83,14 @@
                 android:targetClass="@string/additional_system_update_menu"/>
     </Preference>
 
+    <!-- Device Parts -->
+    <Preference
+        android:key="device_part"
+        android:title="@string/device_part_title"
+        android:icon="@drawable/ic_device_parts"
+        android:summary="@string/device_part_summary">
+        <intent android:action="com.android.settings.action.EXTRA_SETTINGS"
+        	android:targetPackage="org.omnirom.device"
+        	android:targetClass="org.omnirom.device.DeviceSettingsActivity" />
+    </Preference>
 </PreferenceScreen>
