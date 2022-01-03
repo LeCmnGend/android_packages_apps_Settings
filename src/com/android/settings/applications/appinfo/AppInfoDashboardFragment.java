@@ -505,6 +505,11 @@ public class AppInfoDashboardFragment extends DashboardFragment
         return true;
     }
 
+    @Override
+    protected boolean shouldSkipForInitialSUW() {
+        return true;
+    }
+
     private void openPlayStore(String packageName) {
         // Launch an intent to the play store entry
         String playURL = "https://play.google.com/store/apps/details?id=" + packageName;
