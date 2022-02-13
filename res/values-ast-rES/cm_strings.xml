@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2012-2016 The CyanogenMod Project
+     Copyright (C) 2017-2021 The LineageOS Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="mobile_data_settings_summary_unavailable">Nun hai nenguna tarxeta SIM disponible</string>
+    <string name="keyboard_extras_title">Axustes adicionales</string>
+    <string name="advanced_keyboard_settings_title">Axustes avanzaos</string>
+    <string name="advanced_reboot_title">Reaniciu avanzáu</string>
+    <string name="adb_enable_root">Depuración como root</string>
+    <string name="adb_enable_summary_root">Permite la execución de la depuración d\'Android como root</string>
+    <string name="berry_black_theme_title">Prietu puro</string>
+    <string name="berry_black_theme_summary">Un fondu en prieto puro pal estilu «Escuridá»</string>
+    <string name="security_settings_fingerprint_sensor_location_left">llau esquierdu</string>
+    <string name="security_settings_fingerprint_sensor_location_right">llau derechu</string>
+    <string name="tethering_allow_vpn_upstreams_title">Permitir que los veceros usen les VPNs</string>
+    <string name="tethering_allow_vpn_upstreams_summary">Permite que los veceros del puntu Wi-Fi usen les conexones VPN d\u2019esti preséu pa la conectividá</string>
+    <string name="min_refresh_rate_title">Tasa de refrescu mínima</string>
+    <string name="max_refresh_rate_title">Tasa de refrescu máxima</string>
+    <string name="show_navbar_hint_title">Indicador de navegación</string>
+    <string name="show_navbar_hint_summary">Amuesa una barra indicadora de navegación no baxero de la pantalla</string>
+    <string name="app_notification_sound_timeout_value_10_seconds">10 segundos</string>
+    <string name="app_notification_sound_timeout_value_30_seconds">30 segundos</string>
+    <string name="app_notification_sound_timeout_value_1_minute">1 minutu</string>
+    <string name="app_notification_sound_timeout_value_5_minutes">5 minutos</string>
+    <string name="app_notification_sound_timeout_value_15_minutes">10 minutos</string>
+    <string name="app_notification_sound_timeout_value_30_minutes">30 minutos</string>
+    <string name="auto_brightness_one_shot_title">Brillu automáticu namás una vegada</string>
+    <string name="auto_brightness_one_shot_summary">L\'axuste del brillu namás se produz nel momentu que la pantalla se prenda</string>
+    <string name="data_usage_app_restrict_all">Permitir l\'accesu a la rede</string>
+    <string name="data_usage_app_restrict_all_summary">Activa l\'usu de la rede</string>
+    <string name="data_usage_app_restrict_mobile">Datos móviles</string>
+    <string name="data_usage_app_restrict_mobile_summary">Activa l\'usu de los datos móviles</string>
+    <string name="data_usage_app_restrict_vpn">Datos per VPN</string>
+    <string name="data_usage_app_restrict_vpn_summary">Activa l\'usu de los datos per VPN</string>
+    <string name="fast_charging_title">Carga rápida</string>
+    <string name="fast_charging_summary">Desactiva esta opción p\'amenorgar la calor producida pol preséu mentanto carga y aumentar la vida útil de la batería</string>
+    <string name="wifi_setup_wizard_title">Esbilla una rede Wi\u2011Fi</string>
+    <string name="advanced_notifications_title">Axustes avanzaos de los avisos</string>
+    <string name="peak_refresh_rate_summary_custom">Incrementa automáticamente la frecuencia d\'anovamientu de 60 a %1$d Hz en dalgún tipu de conteníu. Esta opción aumenta l\'usu de la batería.</string>
+</resources>
