@@ -18,6 +18,7 @@ package com.android.settings.users;
 
 import android.app.Activity;
 import android.app.settings.SettingsEnums;
+import android.content.ActivityNotFoundException;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -37,6 +38,7 @@ import android.os.RemoteException;
 import android.os.ServiceManager;
 import android.os.UserHandle;
 import android.os.UserManager;
+import android.util.EventLog;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -651,15 +653,18 @@ public class AppRestrictionsFragment extends SettingsPreferenceFragment implemen
         }
 
         private void assertSafeToStartCustomActivity(Intent intent) {
-            // Activity can be started if it belongs to the same app
-            if (intent.getPackage() != null && intent.getPackage().equals(packageName)) {
-                return;
-            }
             // Activity can be started if intent resolves to multiple activities
             List<ResolveInfo> resolveInfos = AppRestrictionsFragment.this.mPackageManager
                     .queryIntentActivities(intent, 0 /* no flags */);
             if (resolveInfos.size() != 1) {
                 return;
+            }
+            EventLog.writeEvent(0x534e4554, "223578534", -1 /* UID */, "");
+            ResolveInfo resolveInfo = mPackageManager.resolveActivity(
+                    intent, PackageManager.MATCH_DEFAULT_ONLY);
+
+            if (resolveInfo == null) {
+                throw new ActivityNotFoundException("No result for resolving " + intent);
             }
             // Prevent potential privilege escalation
             ActivityInfo activityInfo = resolveInfos.get(0).activityInfo;
