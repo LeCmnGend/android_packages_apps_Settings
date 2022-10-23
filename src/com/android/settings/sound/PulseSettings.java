@@ -32,7 +32,7 @@ import androidx.preference.Preference.OnPreferenceChangeListener;
 import androidx.preference.SwitchPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.internal.util.superior.Utils;
+import com.android.internal.util.superior.SuperiorUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -106,11 +106,11 @@ public class PulseSettings extends SettingsPreferenceFragment implements
         mColorPickerPref = (ColorPickerPreference) findPreference(PULSE_COLOR_MODE_CHOOSER_KEY);
         mLavaSpeedPref = findPreference(PULSE_COLOR_MODE_LAVA_SPEED_KEY);
         mColorModePref.setOnPreferenceChangeListener(this);
-        mColorPickerPref.setDefaultValue(Utils.getThemeAccentColor(getContext()));
+        mColorPickerPref.setDefaultValue(SuperiorUtils.getThemeAccentColor(getContext()));
         int colorMode = Settings.Secure.getIntForUser(getContentResolver(),
                 Settings.Secure.PULSE_COLOR_MODE, COLOR_TYPE_ACCENT, UserHandle.USER_CURRENT);
         if (colorMode == COLOR_TYPE_ACCENT) {
-            mColorPickerPref.setNewPreviewColor(Utils.getThemeAccentColor(getContext()));
+            mColorPickerPref.setNewPreviewColor(SuperiorUtils.getThemeAccentColor(getContext()));
         }
         updateColorPrefs(colorMode);
 

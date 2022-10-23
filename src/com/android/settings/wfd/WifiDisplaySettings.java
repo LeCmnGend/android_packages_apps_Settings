@@ -64,7 +64,7 @@ import androidx.preference.PreferenceViewHolder;
 import androidx.preference.SwitchPreference;
 
 import com.android.internal.app.MediaRouteDialogPresenter;
-import com.android.internal.util.superior.Utils;
+import com.android.internal.util.superior.SuperiorUtils;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -313,7 +313,7 @@ public final class WifiDisplaySettings extends SettingsPreferenceFragment implem
                      SystemProperties.set("persist.wfd.legacy.video.mode",
                                               String.valueOf(mLegacyVideoMode));
                 } catch(Exception e) { }
-                if (!Utils.isPackageInstalled(getPrefContext(), "com.qualcomm.wfd.service")) {
+                if (!SuperiorUtils.isPackageInstalled(getPrefContext(), "com.qualcomm.wfd.service")) {
                     preferenceScreen.addPreference(lp);
                 }
             }
