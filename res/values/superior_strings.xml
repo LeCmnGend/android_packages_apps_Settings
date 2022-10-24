@@ -548,4 +548,8 @@
     <string name="fp_wake_unlock_touch">Touch</string>
     <string name="fp_wake_unlock_press">Press</string>
 
+    <!-- Hotspot client manager -->
+    <string name="wifi_tether_client_list_title">Client List</string>
+    <string name="wifi_tether_client_list_summary">Manage clients connected to hotspot</string>
+
 </resources>
