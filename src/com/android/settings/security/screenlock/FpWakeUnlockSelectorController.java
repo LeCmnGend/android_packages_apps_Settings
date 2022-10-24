@@ -23,6 +23,8 @@ import androidx.preference.ListPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 
+import com.android.internal.util.superior.fod.FodUtils;
+
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 
@@ -38,11 +40,13 @@ public class FpWakeUnlockSelectorController extends BasePreferenceController
     private ListPreference mPreference;
     private int mCurrentMode;
     private boolean mAvailable;
+    private boolean mHasFod;
 
     public FpWakeUnlockSelectorController(Context context, String key) {
         super(context, key);
         mFingerprintManager = (FingerprintManager) context.getSystemService(Context.FINGERPRINT_SERVICE);
-        mAvailable = (mFingerprintManager.isHardwareDetected());
+        mHasFod = FodUtils.hasFodSupport(mContext);
+        mAvailable = (mFingerprintManager.isHardwareDetected() && !mHasFod);
     }
 
     @Override
